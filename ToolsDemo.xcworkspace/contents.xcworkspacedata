@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MaskAnimation/MaskAnimation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CommonTools/CommonTools.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LLTabBar/LLTabBar.xcodeproj">
    </FileRef>
 </Workspace>

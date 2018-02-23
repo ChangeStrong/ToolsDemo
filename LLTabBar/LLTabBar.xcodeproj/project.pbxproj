@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6965A288203FC59700A26F12 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965A287203FC59700A26F12 /* CenterViewController.m */; };
 		69EE2D30203EC3C300214A1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE2D2F203EC3C300214A1D /* AppDelegate.m */; };
-		69EE2D33203EC3C300214A1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE2D32203EC3C300214A1D /* ViewController.m */; };
 		69EE2D36203EC3C300214A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EE2D34203EC3C300214A1D /* Main.storyboard */; };
 		69EE2D38203EC3C300214A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69EE2D37203EC3C300214A1D /* Assets.xcassets */; };
 		69EE2D3B203EC3C300214A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EE2D39203EC3C300214A1D /* LaunchScreen.storyboard */; };
@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6965A286203FC59700A26F12 /* CenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		6965A287203FC59700A26F12 /* CenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		69EE2D2B203EC3C300214A1D /* LLTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EE2D2E203EC3C300214A1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69EE2D2F203EC3C300214A1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		69EE2D31203EC3C300214A1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		69EE2D32203EC3C300214A1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		69EE2D35203EC3C300214A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69EE2D37203EC3C300214A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69EE2D3A203EC3C300214A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 				69EE2D4A203EC8EF00214A1D /* Views */,
 				69EE2D2E203EC3C300214A1D /* AppDelegate.h */,
 				69EE2D2F203EC3C300214A1D /* AppDelegate.m */,
-				69EE2D31203EC3C300214A1D /* ViewController.h */,
-				69EE2D32203EC3C300214A1D /* ViewController.m */,
+				6965A286203FC59700A26F12 /* CenterViewController.h */,
+				6965A287203FC59700A26F12 /* CenterViewController.m */,
 				69EE2D47203EC66800214A1D /* LLTabBar.h */,
 				69EE2D48203EC66800214A1D /* LLTabBar.m */,
 				69EE2D44203EC5FB00214A1D /* LLTabBarVC.h */,
@@ -170,9 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				69EE2D4D203EC91500214A1D /* LLTabBarView.m in Sources */,
+				6965A288203FC59700A26F12 /* CenterViewController.m in Sources */,
 				69EE2D49203EC66800214A1D /* LLTabBar.m in Sources */,
 				69EE2D46203EC5FB00214A1D /* LLTabBarVC.m in Sources */,
-				69EE2D33203EC3C300214A1D /* ViewController.m in Sources */,
 				69EE2D3E203EC3C300214A1D /* main.m in Sources */,
 				69EE2D30203EC3C300214A1D /* AppDelegate.m in Sources */,
 			);

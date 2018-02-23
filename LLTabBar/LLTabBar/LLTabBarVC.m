@@ -10,6 +10,7 @@
 #import "LLTabBar.h"
 #import "LLTabBarView.h"
 
+
 @interface LLTabBarVC ()
 @property(nonatomic, strong) LLTabBarView *tabBarBarBgView;
 @end
@@ -19,25 +20,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor orangeColor];
+
     LLTabBar *tabBar = [[LLTabBar alloc]init];
-    
     tabBar.frame =  self.tabBar.frame;
     //替换系统自带tabBar
     [self setValue:tabBar forKey:@"tabBar"];
     
     self.tabBarBarBgView = [[[NSBundle mainBundle] loadNibNamed:@"LLTabBarView" owner:nil options:nil] firstObject];
-//    self.tabBarBarBgView.frame = tabBar.bounds;
-   
+    self.tabBarBarBgView.frame = tabBar.bounds;
     [tabBar addSubview:self.tabBarBarBgView];
-    
-    self.view.backgroundColor = [UIColor orangeColor];
-    
     
     [tabBar setShadowImage:[[UIImage alloc] init]];
     [tabBar setBackgroundImage:[[UIImage alloc] init]];
     
     
      NSLog(@"tabBarHeight:%f,",self.tabBar.bounds.size.height);
+    
+    [self loadVC];
+    
 }
 
 //更改tabBar高度
@@ -47,6 +48,14 @@
     tabFrame.origin.y = self.view.frame.size.height-69;
     self.tabBar.frame = tabFrame;
     self.tabBarBarBgView.frame = self.tabBar.bounds;
+}
+
+-(void)loadVC
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *centerVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"CenterViewController"];
+    
+    self.viewControllers = @[centerVC];
 }
 
 
@@ -75,11 +84,6 @@
 - (UIViewController *)childViewControllerForStatusBarStyle{
     return self.selectedViewController;
 }
-
-
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

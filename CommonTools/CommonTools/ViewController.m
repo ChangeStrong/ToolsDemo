@@ -1,14 +1,16 @@
 //
 //  ViewController.m
-//  LLTabBar
+//  CommonTools
 //
-//  Created by luo luo on 22/02/2018.
+//  Created by luo luo on 23/02/2018.
 //  Copyright © 2018 ChangeStrong. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "TextImageTool.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIImage *image = [TextImageTool drawImageFromText:@"LV20" imageSize:CGSizeMake(120, 60) textColor:[UIColor redColor] bacgroudColor:[UIColor orangeColor] textFontSize:15];
+    self.imageView.image = image;
 }
 
 
