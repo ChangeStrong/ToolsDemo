@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LLTabBarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsa-dv-AR7" userLabel="Bgview">
+                    <rect key="frame" x="0.0" y="20" width="375" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euR-Jm-zNd" userLabel="centerView">
+                            <rect key="frame" x="153" y="-20" width="69" height="69"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-d4-fWY">
+                                    <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" backgroundImage="add"/>
+                                    <connections>
+                                        <action selector="centerButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="usO-gV-il5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="wHw-d4-fWY" firstAttribute="top" secondItem="euR-Jm-zNd" secondAttribute="top" id="6ZD-cH-AYB"/>
+                                <constraint firstAttribute="width" secondItem="euR-Jm-zNd" secondAttribute="height" multiplier="1:1" id="hUW-Cf-jqF"/>
+                                <constraint firstAttribute="bottom" secondItem="wHw-d4-fWY" secondAttribute="bottom" id="jyI-Ta-4kc"/>
+                                <constraint firstAttribute="trailing" secondItem="wHw-d4-fWY" secondAttribute="trailing" id="odb-RX-aqW"/>
+                                <constraint firstItem="wHw-d4-fWY" firstAttribute="leading" secondItem="euR-Jm-zNd" secondAttribute="leading" id="tOJ-OC-VxQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="euR-Jm-zNd" secondAttribute="bottom" id="LHe-Op-C9Y"/>
+                        <constraint firstItem="euR-Jm-zNd" firstAttribute="centerX" secondItem="jsa-dv-AR7" secondAttribute="centerX" id="tUn-aq-Ore"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jsa-dv-AR7" secondAttribute="bottom" id="6gr-Oa-S5p"/>
+                <constraint firstItem="jsa-dv-AR7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="DjM-jB-vy5"/>
+                <constraint firstItem="euR-Jm-zNd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HV0-Gy-zv0"/>
+                <constraint firstAttribute="trailing" secondItem="jsa-dv-AR7" secondAttribute="trailing" id="MTP-1x-DVY"/>
+                <constraint firstItem="jsa-dv-AR7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lb8-gV-dL3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="centerButton" destination="wHw-d4-fWY" id="XcX-T7-M8Q"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="128" height="128"/>
+    </resources>
+</document>
