@@ -22,6 +22,8 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor orangeColor];
 
+     [self loadVC];//需先装载VC 否则可能被系统遮挡
+    
     LLTabBar *tabBar = [[LLTabBar alloc]init];
     tabBar.frame =  self.tabBar.frame;
     //替换系统自带tabBar
@@ -37,7 +39,7 @@
     
      NSLog(@"tabBarHeight:%f,",self.tabBar.bounds.size.height);
     
-    [self loadVC];
+   
     
 }
 

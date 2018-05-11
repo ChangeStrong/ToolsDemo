@@ -5,9 +5,6 @@
       location = "group:TreeTableView/TreeTableView.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MaskAnimation/MaskAnimation.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:CommonTools/CommonTools.xcodeproj">
    </FileRef>
    <FileRef
